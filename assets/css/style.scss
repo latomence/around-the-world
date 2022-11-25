@@ -1,0 +1,298 @@
+// Variables //
+$swatch_1: #F8EDE3;
+$swatch_2: #E0D4C4;
+$swatch_3: #D0B8A8;
+$swatch_4: #7D6D83;
+$swatch_5: #d29c6e;
+
+
+$main-font: 'Plus Jakarta Sans', sans-serif;
+
+
+// General //
+body {
+    margin: 0;
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: $swatch_5;
+    color: white;
+}
+
+
+// Header //
+header {
+    z-index: 9999999;
+    position: fixed;
+    width: -webkit-fill-available;
+    background: white;
+    color: black;
+    box-shadow: 0px 2px 12px 4px #00000061;
+
+    .container {
+        display: flex;
+        padding: 10px;
+        place-content: center;
+
+        .logo {
+
+            img {
+                height: 40px;
+            }
+        }
+
+        .menu {
+            ul {
+                display: flex;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 37px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Footer //
+footer {
+    margin-top: 80px;
+
+    .container {
+        background-color: #333333;
+
+        .logo {
+            text-align: center;
+
+            img {
+
+                height: 250px;
+            }
+        }
+
+        .title {
+            text-align: center;
+            padding: 20px 0;
+        }
+    }
+}
+
+
+// Landing Page //
+
+/* First-Section */
+.first-section {
+    height: 630px;
+
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 153px;
+        
+        video {
+            width: -webkit-fill-available;
+            object-fit: none;
+            height: 630px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: brightness(0.5);
+            opacity: 1;
+            z-index: -1;
+        }
+
+        .title {
+            margin-bottom: 35px;
+
+            h1 {
+                font-size: 45px;
+                line-height: 60px;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 1px 2px 7px #00000066;
+            }
+        }
+
+        .bio {
+            text-align: center;
+            margin: 0 12px;
+            
+            p {
+                text-shadow: 1px 2px 7px #00000066;
+            }
+        }
+    }
+}
+
+
+/* Infos-Section */
+.infos {
+    margin-top: 90px;
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        @media screen and (min-width:992px) {
+            margin: 0 auto;
+        }
+        @media screen and (max-width:991px) {
+            margin: 0 20px;
+        }
+    }
+}
+
+
+/* Rules-Section */
+.rules {
+    margin-top: 90px;
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-flex;
+
+            a {
+                
+                padding: 10px 30px;
+                border-radius: 12px;
+                background-color: #333333;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            margin: 0 auto;
+        }
+        @media screen and (max-width:991px) {
+            margin: 0 20px;
+
+        }
+    }
+}
+
+
+/* More_Cards-Section */
+.more-cards {
+    margin-top: 90px;
+
+    .container {
+        text-align: center;
+        background-image: url("./../img/board.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-shadow: 1px 2px 7px #00000066;
+        }
+
+        .button {
+            display: inline-flex;
+
+            a {
+                
+                padding: 10px 30px;
+                border-radius: 12px;
+                cursor: not-allowed;
+                background-color: #333333cb;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffffcb;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            padding: 80px 0;
+        }
+    }
+}
+
+/* Play-Section */
+.buy {
+    margin-top: 90px;
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-shadow: 1px 2px 7px #00000066;
+        }
+
+        .button {
+            margin-top: 30px;
+            display: inline-flex;
+
+            a {
+                
+                padding: 10px 30px;
+                border-radius: 12px;
+                background-color: #333333;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+
+        .text {
+            text-align: center;
+            margin: 0 12px;
+            
+            p {
+                text-shadow: 1px 2px 7px #00000066;
+            }
+        }
+    }
+}

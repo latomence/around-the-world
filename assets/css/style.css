@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #d29c6e;
+  color: white;
+}
+
+header {
+  z-index: 9999999;
+  position: fixed;
+  width: -webkit-fill-available;
+  background: white;
+  color: black;
+  box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.3803921569);
+}
+header .container {
+  display: flex;
+  padding: 10px;
+  place-content: center;
+}
+header .container .logo img {
+  height: 40px;
+}
+header .container .menu ul {
+  display: flex;
+}
+header .container .menu ul li {
+  list-style-type: none;
+  margin-right: 37px;
+}
+header .container .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  margin-top: 80px;
+}
+footer .container {
+  background-color: #333333;
+}
+footer .container .logo {
+  text-align: center;
+}
+footer .container .logo img {
+  height: 250px;
+}
+footer .container .title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* First-Section */
+.first-section {
+  height: 630px;
+}
+.first-section .container {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 153px;
+}
+.first-section .container video {
+  width: -webkit-fill-available;
+  -o-object-fit: none;
+     object-fit: none;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  opacity: 1;
+  z-index: -1;
+}
+.first-section .container .title {
+  margin-bottom: 35px;
+}
+.first-section .container .title h1 {
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+}
+.first-section .container .bio {
+  text-align: center;
+  margin: 0 12px;
+}
+.first-section .container .bio p {
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+/* Infos-Section */
+.infos {
+  margin-top: 90px;
+}
+.infos .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.infos .container h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .infos .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .infos .container {
+    margin: 0 20px;
+  }
+}
+
+/* Rules-Section */
+.rules {
+  margin-top: 90px;
+}
+.rules .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.rules .container h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.rules .container .content {
+  text-align: center;
+}
+.rules .container .button {
+  display: inline-flex;
+}
+.rules .container .button a {
+  padding: 10px 30px;
+  border-radius: 12px;
+  background-color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .rules .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .rules .container {
+    margin: 0 20px;
+  }
+}
+
+/* More_Cards-Section */
+.more-cards {
+  margin-top: 90px;
+}
+.more-cards .container {
+  text-align: center;
+  background-image: url("./../img/board.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+.more-cards .container h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+}
+.more-cards .container .button {
+  display: inline-flex;
+}
+.more-cards .container .button a {
+  padding: 10px 30px;
+  border-radius: 12px;
+  cursor: not-allowed;
+  background-color: rgba(51, 51, 51, 0.7960784314);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7960784314);
+}
+@media screen and (min-width: 992px) {
+  .more-cards .container {
+    padding: 80px 0;
+  }
+}
+
+/* Play-Section */
+.buy {
+  margin-top: 90px;
+}
+.buy .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.buy .container h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+}
+.buy .container .button {
+  margin-top: 30px;
+  display: inline-flex;
+}
+.buy .container .button a {
+  padding: 10px 30px;
+  border-radius: 12px;
+  background-color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.buy .container .text {
+  text-align: center;
+  margin: 0 12px;
+}
+.buy .container .text p {
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.4);
+}/*# sourceMappingURL=style.css.map */
